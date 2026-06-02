@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "b4ff806dc45cc4fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "b25f9b2854a40677",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cc0917be6488f09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "openspec/changes/add-user-auth/tasks.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b5882fddbe869268",
+    "type": "split",
+    "children": [
+      {
+        "id": "679446fa8b1f4a82",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d3a05626028460b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "2501ba16cb22b0e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "3b0ec6f4570d6135",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1949a2d30a425c91",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7f5daa8633b0790",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0dd39d8ddd926e71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "openspec/changes/add-user-auth/tasks.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para tasks"
+            }
+          },
+          {
+            "id": "c2ae8c54ab1cc981",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "openspec/changes/add-user-auth/tasks.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para tasks"
+            }
+          },
+          {
+            "id": "c93d5b387bb35e0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "dc471d4d8707f596",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "f1dae06a3d27bf43",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "openspec/changes/add-user-auth/tasks.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "6cc0917be6488f09",
+  "lastOpenFiles": [
+    "openspec/changes/add-user-auth/design.md",
+    "openspec/changes/add-user-auth/specs/user-auth/spec.md",
+    "openspec/changes/add-user-auth/proposal.md",
+    "node_modules/Sem título.canvas",
+    "packages/backend/README.md"
+  ]
+}
