@@ -6,5 +6,7 @@ export function createSwaggerConfig() {
     .setDescription('Documentação da API do Projeto Política IA')
     .setVersion('1.0')
     .addTag('api')
+    .addTag('auth')
+    .addBearerAuth()
     .build();
 }

@@ -1,5 +1,4 @@
-import { Controller, Get, Post, Body, Redirect } from '@nestjs/common';
-import { CreateUserDto } from './dto/create-user.dto';
+import { Controller, Get, Redirect } from '@nestjs/common';
 
 @Controller()
 export class AppController {
@@ -7,13 +6,5 @@ export class AppController {
   @Redirect('/api', 302)
   redirectRoot(): void {
     return;
-  }
-
-  @Post('users')
-  createUser(@Body() createUserDto: CreateUserDto) {
-    return {
-      message: 'Usuário criado com sucesso',
-      data: createUserDto,
-    };
   }
 }
