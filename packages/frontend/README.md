@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend — Projeto Política IA
 
-## Getting Started
+Interface web Next.js 15 com landing page e fluxo de autenticação integrado ao backend.
 
-First, run the development server:
+## Pré-requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js e pnpm (monorepo)
+- Backend rodando (`packages/backend`) com CORS habilitado
+
+## Configuração
+
+1. Na **raiz do monorepo**, configure o `.env` (copie de `.env.example`):
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3011
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale dependências na raiz ou no pacote:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Desenvolvimento
 
-## Learn More
+```bash
+cd packages/frontend
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Acesse `http://localhost:3000` (porta padrão do Next.js).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Rotas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Rota | Descrição |
+|------|-----------|
+| `/` | Landing page |
+| `/cadastro` | Criar conta (React Hook Form + API `/auth/register`) |
+| `/login` | Entrar (`/auth/login`) |
+| `/conta` | Área autenticada mínima (protegida) |
 
-## Deploy on Vercel
+Rotas legadas redirecionam: `/signup` → `/cadastro`, `/profile` → `/conta`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autenticação (cliente)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Tokens `accessToken` e `refreshToken` em `localStorage`
+- Renovação automática via interceptor axios (`POST /auth/refresh`)
+- Logout chama `POST /auth/logout` e limpa tokens locais
+
+## Stack
+
+- Next.js 15 (App Router), Tailwind CSS, axios
+- **React Hook Form** + Zod (`@hookform/resolvers`) nos formulários de auth
+- react-hot-toast para feedback
+
+## Build
+
+```bash
+pnpm build
+```
